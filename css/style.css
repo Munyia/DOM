@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: inline;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+body{
+  background-image: url("../res/bkg.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ font-size: large;
+ color: aqua;
+}
+header img {
+  width: 20px;
+}
+#cart {
+  display: flex;
+  padding-top: 50px;
+}
+.img {
+  width: 20%;
+}
+.item {
+  display: block;
+  flex-direction: row;
+  flex-direction: column;
+}
+.like img{
+    width: 10px;
+}
