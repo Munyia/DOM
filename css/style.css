@@ -6,13 +6,22 @@ nav {
   display: inline;
   margin-top: 20px;
   justify-content: space-around;
+  color: azure;
+  font-size: large;
+}
+header{
+  background-color:aqua;
+  width: 100%;
+  height: 50px;
+ padding-top: 20px;
+ justify-content: space-around;
 }
 body{
   background-image: url("../res/bkg.jpg");
  background-size: cover;
  background-repeat: no-repeat;
  font-size: large;
- color: aqua;
+ color: white;
 }
 header img {
   width: 20px;

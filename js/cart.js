@@ -8,11 +8,16 @@ const items = document.querySelectorAll('.item');
     const pink =item.querySelector('.pink')
     const quantityDisplay = item.querySelector('.quantity');
     const priceDisplay = item.querySelector('.price');
+    const amnt = item.querySelector('.amnt');
+    const tot = item.querySelector('.indtot');
     let quantity = parseInt(quantityDisplay.textContent);
     
     increment.addEventListener('click', () => {
       quantity++;
       quantityDisplay.textContent = quantity;
+      console.log(amnt.innerHTML)
+      tot.textContent= amnt.innerHTML * quantity ;
+
       updateTotal();
     });
 
@@ -37,24 +42,17 @@ const items = document.querySelectorAll('.item');
         pink.setAttribute('src','res/pink.png')
       }
     });
+
+    priceDisplay.addEventListener('click', () => {
+      let price = 5000; 
+      if (increment) {
+        price *= increment;
+      } else {
+        price /= decrement;
+      }
+      document.getElementsByClassName('priceDisplay').innerText = `&#x20A6 ${price.toFixed(2)}`;
+    });
+
+
   });
-
-  if (item.liked) {
-    itemElement.querySelector('.like').classList.add('liked');
-}
-cartContainer.appendChild(itemElement);
-
-document.getElementById('priceDisplay').addEventListener('click', () => {
-  let price = 5000; 
-  if (increment) {
-    price *= increment;
-  } else {
-    price /= decrement;
-  }
-  document.getElementById('priceDisplay').innerText = `&#x20A6 ${price.toFixed(2)}`;
-});
-
-
-
-
 
