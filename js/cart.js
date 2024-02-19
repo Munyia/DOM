@@ -1,5 +1,15 @@
 const items = document.querySelectorAll('.item');
-
+function updateTotal() {
+  const total =document.getElementById('total')
+  let totals =0
+  items.forEach(item => {
+    let quantity = parseInt(item.querySelector('.quantity').textContent);
+    const amnt = item.querySelector('.amnt');
+    totals+= (amnt.innerHTML * quantity)
+  });
+  total.textContent= totals ;
+  
+}
   items.forEach(item => {
     const increment = item.querySelector('.increment');
     const decrement = item.querySelector('.decrement');
@@ -16,19 +26,19 @@ const items = document.querySelectorAll('.item');
       quantity++;
       quantityDisplay.textContent = quantity;
       console.log(amnt.innerHTML)
-      tot.textContent= amnt.innerHTML * quantity ;
-
+      tot.textContent=amnt.innerHTML * quantity ;
       updateTotal();
     });
-
+    
     decrement.addEventListener('click', () => {
       if (quantity > 0) {
         quantity--;
-        quantityDisplay.textContent = quantity;
+        quantityDisplay.textContent = quantity;        
+        tot.textContent=amnt.innerHTML * quantity ;
         updateTotal();
       }
     });
-
+    
     deleteBtn.addEventListener('click', () => {
       item.remove();
       updateTotal();
@@ -43,16 +53,19 @@ const items = document.querySelectorAll('.item');
       }
     });
 
-    priceDisplay.addEventListener('click', () => {
-      let price = 5000; 
-      if (increment) {
-        price *= increment;
-      } else {
-        price /= decrement;
-      }
-      document.getElementsByClassName('priceDisplay').innerText = `&#x20A6 ${price.toFixed(2)}`;
-    });
+    // priceDisplay.addEventListener('click', () => {
+    //   let price = 5000; 
+    //   if (increment) {
+    //     price *= increment;
+    //   } else {
+    //     price /= decrement;
+    //   }
+    //   document.getElementsByClassName('priceDisplay').innerText = `&#x20A6 ${price.toFixed(2)}`;
+    // });
 
 
   });
+  
+  
 
+  

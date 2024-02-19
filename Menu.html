@@ -8,41 +8,68 @@
     <body>
         <header>
             <nav>
+              <div class="nav1">
                 <a href="index.html">Menu</a>
-                <img src="res/shopping-cart-304843_640.png" alt="">
+                <a href="">Find a Store</a>
+              </div>
+                <div class="nav2">
+                <a href="">Log in/ Sign up</a>
+                  <img src="res/shopping-cart-304843_640.png" alt="">
+                  <a href="">Basket</a>
+                </div>
             </nav>
+            <div>
+            <div class="head1">
+              <p>Munyia</p>
+              <input type="text" placeholder="I am searching for" style="background-image: url('./res/icons8-search.gif'); background-size: 20px 20px; background-repeat: no-repeat; background-position: 10px center; padding-left: 40px;">
+            </div>
+            </div>
+            <div class="head2">
+              <p>Arts</p>
+              <p>Toys</p>
+              <p>Games</p>
+              <p>Gift Finder</p>
+            </div>
         </header>
         <div id="cart">
           <div class="item">
-            <img class="img" src="res/c-d-x-PDX_a_82obo-unsplash.jpg" alt="">
-            <button class="decrement">-</button>
-            <span class="quantity">1</span>
-            <button class="increment">+</button>
-            <button class="like"><img class="pink" src="res/red.png" alt=""></button>
-            <button class="delete">Delete</button>
-            <span class="price">&#x20A6 5,000.00</span>
+            <img class="img" src="res/img1.jpg" alt="">
+            <div class="butt">
+              <button class="decrement">-</button>
+              <span class="quantity">1</span>
+              <button class="increment">+</button>
+              <span class="price">&#x20A6 <span class="amnt">2500</span></span>
+              <button class="like"><img class="pink" src="res/red.png" alt=""></button>
+              <button class="delete">Delete</button>
+              <span> &#x20A6<span class="indtot">2500</span></span>
+            </div>
           </div>
           <div class="item">
-            <img class="img"  src="res/sebastian-banasiewcz-oXXc-s5nNy8-unsplash.jpg" alt="">
-            <button class="decrement">-</button>
-            <span class="quantity">1</span>
-            <button class="increment">+</button>
-            <button class="like"><img class="pink" src="res/red.png" alt=""></button>
-            <button class="delete">Delete</button>
-            <span class="price">&#x20A6 5,000.00</span>
+            <img class="img"  src="res/img2.jpg" alt="">
+            <div class="butt">
+                <button class="decrement">-</button>
+                <span class="quantity">1</span>
+                <button class="increment">+</button>
+              <span class="price">&#x20A6 <span class="amnt">3500</span></span>
+              <button class="like"><img class="pink" src="res/red.png" alt=""></button>
+              <button class="delete">Delete</button>
+              <span> &#x20A6<span class="indtot">3500</span></span>
+            </div>
           </div>
+          <div class="item">
+            <img class="img" src="res/img3.jpg" alt="">
+            <div class="butt">
+                <button class="decrement">-</button>
+                <span class="quantity">1</span>
+                <button class="increment">+</button>
+              <span class="price">&#x20A6 <span class="amnt">5000</span></span>
+              <button class="like"><img class="pink" src="res/red.png" alt=""></button>
+              <button class="delete">Delete</button>
+              <span> &#x20A6<span class="indtot">5000</span></span>
+            </div>
+          </div>
+          <span>&#x20A6<span id="total">80000</span></span>
         </div>
-          <div class="item">
-            <img class="img" src="res/the-dk-photography-NUoPWImmjCU-unsplash.jpg" alt="">
-            <button class="decrement">-</button>
-            <span class="quantity">1</span>
-            <button class="increment">+</button>
-            <span class="price">&#x20A6 <span class="amnt">5000</span></span>
-            <button class="like"><img class="pink" src="res/red.png" alt=""></button>
-            <button class="delete">Delete</button>
-            <span> &#x20A6<span class="indtot"> 5000</span></span>
-          </div>
-
     <script src="js/cart.js"></script>
 </body>
 </html>

@@ -3,25 +3,64 @@
   padding: 0;
 }
 nav {
-  display: inline;
+  display: flex;
   margin-top: 20px;
   justify-content: space-around;
+  align-items: center;
+}
+nav a{
+  text-decoration: none;
   color: azure;
   font-size: large;
 }
-header{
-  background-color:aqua;
-  width: 100%;
-  height: 50px;
- padding-top: 20px;
- justify-content: space-around;
+.nav1,
+.nav2{
+  gap: 25px;
+  padding: 0 10px 0 0;
+  display: flex;
 }
-body{
+
+header {
+  background-color: black;
+  width: 100%;
+  height: 150px;
+  padding-top: 1vh;
+  color: white;
+}
+.head1,
+.head2 {
+  display: inline;
+  display: flex;
+}
+.head1{
+  padding-top: 20px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: large;
+  gap: 10px;
+}
+.head1 p{
+  font-size: larger;
+  font-style: italic;
+  color: chartreuse;
+}
+.head1 input{
+  width: 70%;
+  height: 40px;
+  border-radius: 40px;
+}
+.head2{
+  padding-top: 20px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: large;
+}
+body {
   background-image: url("../res/bkg.jpg");
- background-size: cover;
- background-repeat: no-repeat;
- font-size: large;
- color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: large;
+  color: white;
 }
 header img {
   width: 20px;
@@ -29,15 +68,16 @@ header img {
 #cart {
   display: flex;
   padding-top: 50px;
-}
-.img {
-  width: 20%;
-}
-.item {
-  display: block;
-  flex-direction: row;
+  border: solid black 1px;
   flex-direction: column;
+  justify-content: right;
+  align-items: end;
+  padding-right: 50px;
 }
-.like img{
-    width: 10px;
+.item img{
+  width: 10vw;
 }
+.like img {
+  width: 10px;
+}
+
