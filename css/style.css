@@ -72,7 +72,8 @@ header img {
   flex-direction: column;
   justify-content: right;
   align-items: end;
-  padding-right: 50px;
+  padding-right: 10%;
+  gap: 30px;
 }
 .item img{
   width: 10vw;
@@ -80,4 +81,36 @@ header img {
 .like img {
   width: 10px;
 }
-
+.butt{
+  display: flex;
+  height: 30px;
+  gap: 10px;
+}
+.decrement, 
+.increment{
+  display: flex;
+  width: 50px;
+  height: 20px;
+  color: gray;
+  background-color: black;
+  font-size: larger;
+}
+.quantity{
+  color: black;
+}
+#total{
+  color: black;
+}
+.delete{
+  display: flex;
+  width: 50px;
+  height: 20px;
+  color: red;
+  background-color: black;
+}
+.like{
+  display: flex;
+  width: 50px;
+  height: 20px;
+  background-color: black;
+}
