@@ -30,7 +30,7 @@ nav a {
 header {
   background-color: black;
   width: 100%;
-  height: 150px;
+  height: 25vh;
   padding-top: 1vh;
   color: white;
 }
@@ -75,13 +75,11 @@ header {
 
 /* Styling for the body */
 body {
-  background-image: url("../res/bkg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+ height: 100vh;
+ overflow: hidden;
   font-size: large;
   color: black;
-  background-attachment: fixed;
-  background-position: center;
+  /* background-attachment: fixed; */
 }
 
 /* Styling for the cart icon */
@@ -91,18 +89,45 @@ header img {
 
 /* Styling for the cart container */
 #cart {
+  background-image: url("../res/bkg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   padding-top: 50px;
   flex-direction: column;
-  justify-content: right;
   align-items: end;
-  padding-right: 10%;
   gap: 50px;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.item{
+  display: flex;
+  width: 35%;
+  gap: 5%;
+}
+  .inner-item{
+    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+}
+  .grp1, .grp2, .grp3{
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.grp2Inner{
+  display: flex;
+  gap: 10%;
 }
 
 /* Styling for item images */
 .item img {
-  width: 10vw;
+  width: 30%;
+  border-radius: 5%;
 }
 
 /* Styling for like button images */
@@ -121,11 +146,12 @@ header img {
 .decrement,
 .increment {
   display: flex;
-  width: 50px;
+  width: 20px;
   height: 20px;
-  color: gray;
-  background-color: black;
+  color: black;
+  background-color: rgb(237,179,46);
   font-size: larger;
+  border-color: rgb(237,179,46);
 }
 
 /* Styling for quantity display */

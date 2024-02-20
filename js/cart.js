@@ -12,9 +12,9 @@ function updateTotal() {
     // Get the quantity of the item
     let quantity = parseInt(item.querySelector('.quantity').textContent);
     // Get the price per item
-    const tot = parseInt(item.querySelector('.indtot'));
+    const tot = parseInt(item.querySelector('.indtot').innerHTML);
     // Calculate the total price for this item
-    totals += tot.innerHTML 
+    totals += tot
   });
 
   // Set the total price in the HTML
