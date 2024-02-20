@@ -45,11 +45,11 @@ function updateTotal() {
     });
 
     like.addEventListener('click', () => {
-      if (pink.getAttribute("src") == "res/pink.png") {
-        pink.setAttribute('src','res/red.png')
+      if (pink.getAttribute("src") == "res/R.gif") {
+        pink.setAttribute('src','res/RC.gif')
         
       } else {
-        pink.setAttribute('src','res/pink.png')
+        pink.setAttribute('src','res/R.gif')
       }
     });
 

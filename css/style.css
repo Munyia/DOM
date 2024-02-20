@@ -73,13 +73,13 @@ header img {
   justify-content: right;
   align-items: end;
   padding-right: 10%;
-  gap: 30px;
+  gap: 50px;
 }
 .item img{
   width: 10vw;
 }
 .like img {
-  width: 10px;
+  width: 30px;
 }
 .butt{
   display: flex;
@@ -106,11 +106,5 @@ header img {
   width: 50px;
   height: 20px;
   color: red;
-  background-color: black;
-}
-.like{
-  display: flex;
-  width: 50px;
-  height: 20px;
   background-color: black;
 }
