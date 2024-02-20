@@ -68,4 +68,4 @@ function updateTotal() {
   
   
 
-  
+  updateTotal()

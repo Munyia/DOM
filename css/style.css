@@ -60,7 +60,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   font-size: large;
-  color: white;
+  color: black;
 }
 header img {
   width: 20px;
@@ -68,7 +68,6 @@ header img {
 #cart {
   display: flex;
   padding-top: 50px;
-  border: solid black 1px;
   flex-direction: column;
   justify-content: right;
   align-items: end;
@@ -96,9 +95,6 @@ header img {
   font-size: larger;
 }
 .quantity{
-  color: black;
-}
-#total{
   color: black;
 }
 .delete{
