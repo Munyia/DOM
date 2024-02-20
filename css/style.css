@@ -1,25 +1,32 @@
+/* Resetting default margin and padding for all elements */
 * {
   margin: 0;
   padding: 0;
 }
+
+/* Styling for the navigation bar */
 nav {
   display: flex;
   margin-top: 20px;
   justify-content: space-around;
   align-items: center;
 }
-nav a{
+
+/* Styling for navigation links */
+nav a {
   text-decoration: none;
   color: azure;
   font-size: large;
 }
+/* Styling for the navigation sections */
 .nav1,
-.nav2{
+.nav2 {
   gap: 25px;
   padding: 0 10px 0 0;
   display: flex;
 }
 
+/* Styling for the header */
 header {
   background-color: black;
   width: 100%;
@@ -27,44 +34,62 @@ header {
   padding-top: 1vh;
   color: white;
 }
+
+/* Styling for the header content */
 .head1,
 .head2 {
   display: inline;
   display: flex;
 }
-.head1{
+
+/* Styling for the search bar and logo section */
+.head1 {
   padding-top: 20px;
   justify-content: space-around;
   align-items: center;
   font-size: large;
   gap: 10px;
 }
-.head1 p{
+
+/* Styling for the brand name */
+.head1 p {
   font-size: larger;
   font-style: italic;
   color: chartreuse;
 }
-.head1 input{
+
+/* Styling for the search input */
+.head1 input {
   width: 70%;
   height: 40px;
   border-radius: 40px;
 }
-.head2{
+
+/* Styling for the category section */
+.head2 {
   padding-top: 20px;
   justify-content: space-around;
   align-items: center;
   font-size: large;
 }
+
+/* Styling for the body */
 body {
   background-image: url("../res/bkg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-size: large;
   color: black;
+  background-attachment: fixed;
+  background-position: center;
 }
+
+/* Styling for the cart icon */
 header img {
   width: 20px;
 }
+
+/* Styling for the cart container */
 #cart {
   display: flex;
   padding-top: 50px;
@@ -74,19 +99,27 @@ header img {
   padding-right: 10%;
   gap: 50px;
 }
-.item img{
+
+/* Styling for item images */
+.item img {
   width: 10vw;
 }
+
+/* Styling for like button images */
 .like img {
   width: 30px;
 }
-.butt{
+
+/* Styling for item buttons */
+.butt {
   display: flex;
   height: 30px;
   gap: 10px;
 }
-.decrement, 
-.increment{
+
+/* Styling for increment and decrement buttons */
+.decrement,
+.increment {
   display: flex;
   width: 50px;
   height: 20px;
@@ -94,10 +127,14 @@ header img {
   background-color: black;
   font-size: larger;
 }
-.quantity{
+
+/* Styling for quantity display */
+.quantity {
   color: black;
 }
-.delete{
+
+/* Styling for delete button */
+.delete {
   display: flex;
   width: 50px;
   height: 20px;
