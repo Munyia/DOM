@@ -167,3 +167,18 @@ header img {
   height: 20px;
   color: red;
 }
+@media (max-width: 576px) {
+  #box1,
+  #box2 {
+    width: 100%;
+  }
+  #box {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  #box {
+    width: 100%;
+  }
+}
