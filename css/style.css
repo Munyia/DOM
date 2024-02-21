@@ -31,13 +31,14 @@ nav a {
 }
 #cart-count {
   position: absolute;
-  top: -5px; /* Adjust vertical position to align with the top of the cart image */
-  right: -5px; /* Adjust horizontal position to align with the right of the cart image */
-  background-color: red; /* Customize background color */
-  color: white; /* Customize text color */
-  border-radius: 50%; /* Make it a circle */
-  padding: 3px 6px; /* Adjust padding as needed */
-  font-size: 12px; /* Adjust font size as needed */
+  top: -6px; 
+  right: -12px; 
+  background-color: red;
+  color: white; 
+  border-radius: 50%; 
+  padding: 3px 6px; 
+  font-size: 12px; 
+  opacity: 0.7;
 }
 /* Styling for the header */
 header {
@@ -88,6 +89,7 @@ header {
 
 /* Styling for the body */
 body {
+  height: fit-content;
  overflow: hidden;
   font-size: large;
   color: black;
@@ -110,7 +112,7 @@ header img {
   flex-direction: column;
   align-items: end;
   gap: 50px;
-  height: 70vh;
+  height: 50vh;
   overflow-y: scroll;
   padding-bottom: 100px;
 }
@@ -178,6 +180,14 @@ header img {
   width: 50px;
   height: 20px;
   color: red;
+}
+#tott {
+  display: flex;
+  color:black;
+ margin-right: 100%;
+ margin-bottom: 10%;
+ justify-content: center;
+ text-align: center;
 }
 @media (max-width: 576px) {
   #box1,
