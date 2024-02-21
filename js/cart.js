@@ -6,6 +6,7 @@ function updateTotal() {
   // Select the element with the id 'total'
   const total = document.getElementById('total');
   let totals = 0; // Initialize total variable
+  
 
   // Loop through each item
   items.forEach(item => {
@@ -40,6 +41,7 @@ items.forEach(item => {
     quantityDisplay.textContent = quantity; // Update quantity display
     tot.textContent = amnt.innerHTML * quantity; // Update total display
     updateTotal(); // Update total price
+    updateCartCount(); // Update cart count
   });
 
   // Event listener for decrement button
@@ -49,6 +51,7 @@ items.forEach(item => {
       quantityDisplay.textContent = quantity; // Update quantity display
       tot.textContent = amnt.innerHTML * quantity; // Update total display
       updateTotal(); // Update total price
+      updateCartCount(); // Update cart count
     }
   });
 
@@ -67,6 +70,25 @@ items.forEach(item => {
       pink.setAttribute('src', 'res/R.gif'); // Change to red heart
     }
   });
+  // Select the cart count element
+const cartCount = document.getElementById('cart-count');
+
+// Function to update the cart count
+function updateCartCount() {
+  let itemCount = 0;
+
+  // Loop through each item
+  items.forEach(item => {
+    const quantity = parseInt(item.querySelector('.quantity').textContent);
+    itemCount += quantity;
+  });
+
+  // Set the cart count in the HTML
+  cartCount.textContent = itemCount;
+}
+
+// Call updateCartCount initially to set the initial cart count
+updateCartCount();
 });
 
 // Call updateTotal function initially to calculate total price
