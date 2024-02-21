@@ -26,6 +26,19 @@ nav a {
   display: flex;
 }
 
+#cart-container {
+  position: relative;
+}
+#cart-count {
+  position: absolute;
+  top: -5px; /* Adjust vertical position to align with the top of the cart image */
+  right: -5px; /* Adjust horizontal position to align with the right of the cart image */
+  background-color: red; /* Customize background color */
+  color: white; /* Customize text color */
+  border-radius: 50%; /* Make it a circle */
+  padding: 3px 6px; /* Adjust padding as needed */
+  font-size: 12px; /* Adjust font size as needed */
+}
 /* Styling for the header */
 header {
   background-color: black;
