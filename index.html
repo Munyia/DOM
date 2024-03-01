@@ -1,60 +1,111 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>Dom C.P</title>
-    <!-- External CSS -->
+    <title>Dom</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- Header section -->
-    <header>
-        <!-- Navigation bar -->
-        <nav>
-            <!-- Navigation links -->
-            <div class="nav1">
-                <a href="Menu.html"> Go to My Cart</a>
+    <body>
+        <header>
+            <nav>
+              <div class="nav1">
+                <a href="index.html"> My Cart</a>
                 <a href="">Find a Store</a>
-            </div>
-            <!-- User options and shopping cart -->
-            <div class="nav2">
+              </div>
+                <div class="nav2">
                 <a href="">Log in/ Sign up</a>
-                <img src="res/shopping-cart-304843_640.png" alt="">
-                <a href="">Basket</a>
+                <div id="cart-container">
+                  <img src="res/shopping-cart-304843_640.png" alt="">
+                  <span id="cart-count"> </span>
+                </div>
+                  <a href="">Basket</a>
+                </div>
+            </nav>
+            <div>
+            <div class="head1">
+              <p>Munyia</p>
+              <input type="text" placeholder="I am searching for" style="background-image: url('./res/icons8-search.gif'); background-size: 20px 20px; background-repeat: no-repeat; background-position: 10px center; padding-left: 40px;">
             </div>
-        </nav>
-        <!-- Search bar -->
-        <div class="head1">
-            <p>Munyia</p>
-            <input type="text" placeholder="I am searching for" style="background-image: url('./res/icons8-search.gif'); background-size: 20px 20px; background-repeat: no-repeat; background-position: 10px center; padding-left: 40px;">
+            </div>
+            <div class="head2">
+              <p>Arts</p>
+              <p>Toys</p>
+              <p>Games</p>
+              <p>Gift Finder</p>
+            </div>
+        </header>
+        <div id="cart">
+          <div class="item">
+            <img class="img" src="res/img1.jpg" alt="">
+            <div class="inner-item">
+              <div class="grp1">
+                <h3>Mama Coco</h3>
+                <h3 class="delete">x</h3>
+              </div>
+              <div class="grp2">
+                <span class="price">&#x20A6 <span class="amnt">2500</span></span>
+                <div class="grp2Inner">
+                  <button class="decrement">-</button>
+                  <span class="quantity">1</span>
+                  <button class="increment">+</button> 
+                </div>
+              </div>
+              <div class="grp3">
+                  <button class="like"><img class="pink" src="res/RC.gif" alt=""></button>
+                  <span> &#x20A6<span class="indtot">2500</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="img"  src="res/img2.jpg" alt="">
+            <div class="inner-item">
+              <div class="grp1">
+                <h3>Forest</h3>
+                <h3 class="delete">x</h3>
+              </div>
+              <div class="grp2">
+                <span class="price">&#x20A6 <span class="amnt">3500</span></span>
+                <div class="grp2Inner">
+                  <button class="decrement">-</button>
+                  <span class="quantity">1</span>
+                  <button class="increment">+</button> 
+                </div>
+              </div>
+              <div class="grp3">
+                  <button class="like"><img class="pink" src="res/RC.gif" alt=""></button>
+                  <span> &#x20A6<span class="indtot">3500</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="img" src="res/img3.jpg" alt="">
+            <div class="inner-item">
+              <div class="grp1">
+                <h3>Flower</h3>
+                <h3 class="delete">x</h3>
+              </div>
+              <div class="grp2">
+                <span class="price">&#x20A6 <span class="amnt">5000</span></span>
+                <div class="grp2Inner">
+                  <button class="decrement">-</button>
+                  <span class="quantity">1</span>
+                  <button class="increment">+</button> 
+                </div>
+              </div>
+              <div class="grp3">
+                  <button class="like"><img class="pink" src="res/RC.gif" alt=""></button>
+                  <span> &#x20A6<span class="indtot">5000</span></span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span id="tott">&#x20A6<span id="total"></span></span>
         </div>
-        <!-- Category section -->
-        <div class="head2">
-            <p>Arts</p>
-            <p>Toys</p>
-            <p>Games</p>
-            <p>Gift Finder</p>
         </div>
-    </header>
-
-    <!-- Item section -->
-    <div class="item">
-        <!-- Images of items -->
-        <img class="img" src="res/c-d-x-PDX_a_82obo-unsplash.jpg" alt="">
-        <img class="img"  src="res/img2.jpg" alt="">
-        <img class="img"  src="res/img1.jpg" alt="">
-        <img class="img"  src="res/img3.jpg" alt="">
-        <img class="img"  src="res/ryan-plomp-jvoZ-Aux9aw-unsplash.jpg" alt="">
-        <img class="img"  src="res/the-dk-photography-NUoPWImmjCU-unsplash.jpg" alt="">
-    </div>
-
-    <!-- External JavaScript -->
     <script src="js/cart.js"></script>
 </body>
 </html>
+
 
 
 
